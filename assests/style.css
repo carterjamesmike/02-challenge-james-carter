@@ -1,0 +1,42 @@
+*{
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    /* Forces elements to the next line if they don't fit */
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 60px;
+    background: #13293d;
+    color: #fff;
+  }
+
+  footer {
+    display: flex;
+    /* Forces elements to the next line if they don't fit */
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px;
+    background: #13293d;
+    color: #fff;
+  }
+
+main {
+    display: inline-block;
+}
+
+ main section h2  {
+    display: inline-block;
+    flex: 1 0 0;
+    padding: 10px;
+    text-align: center;
+    border-right: 1px solid red;
+    /* border-style: solid;
+    border-radius: 5px; */
+  }
+  
+  main section p {
+    display: inline-block;
+  }
+
