@@ -1,5 +1,5 @@
 *{
-    box-sizing: border-box;
+  font: "arial";
 }
 
 header {
@@ -23,20 +23,44 @@ header {
   }
 
 main {
-    display: inline-block;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
- main section h2  {
-    display: inline-block;
-    flex: 1 0 0;
-    padding: 10px;
-    text-align: center;
-    border-right: 1px solid red;
-    /* border-style: solid;
-    border-radius: 5px; */
-  }
-  
-  main section p {
-    display: inline-block;
-  }
+.container1 {
+  display: flex;
+}
 
+.container1header {
+ border-right: 5px solid red;
+ width: 120px; 
+}
+
+.container1content {
+  padding-left: 10px;
+  display: inline-flex;
+}
+
+.container2{
+  display: flex;
+}
+
+.container2header {
+  border-right: 5px solid red; 
+  width: 120px;
+ }
+ 
+ .container2content {
+   padding-left: 10px;
+ }
+
+ .container2header img {
+  width: 120px;
+  opacity: .0001;
+ }
+
+ .container2header img:hover {
+  opacity: 1;
+  cursor: pointer;
+ }
