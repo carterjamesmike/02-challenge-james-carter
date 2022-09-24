@@ -30,37 +30,67 @@ main {
 
 .container1 {
   display: flex;
+  width: 100%;
 }
 
 .container1header {
  border-right: 5px solid red;
- width: 120px; 
+ width: 15%; 
 }
 
 .container1content {
   padding-left: 10px;
-  display: inline-flex;
+  width: 100%;
+  display: flex;
 }
 
 .container2{
   display: flex;
+  width: 100%;
 }
 
 .container2header {
   border-right: 5px solid red; 
-  width: 120px;
+  width: 15%; 
  }
  
  .container2content {
    padding-left: 10px;
+   width: 100%;
+   
  }
 
  .container2header img {
-  width: 120px;
+  width: 100%;
   opacity: .0001;
  }
 
  .container2header img:hover {
   opacity: 1;
   cursor: pointer;
+ }
+
+ .card {
+  /* flex: 1 0 0; */
+  /* order: 2; */
+  /* padding: 10px; */
+  text-align: center;
+  border-style: solid;
+  border-width: 1px;
+  width: 49.7%;
+  float: left;
+  justify-content: space-between;
+  /* margin-left: auto;
+  margin-right: auto; */
+ }
+
+ .cardTop {
+  order: 1;
+  /* flex: 1 0 0; */
+  /* padding: 10px; */
+  text-align: center;
+  border-style: solid;
+  border-width: 1px;
+  width: 100%;
+
  }
