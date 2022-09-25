@@ -1,5 +1,12 @@
 *{
-  font: "arial";
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+
+}
+
+body {
+  background-color: bisque;
 }
 
 header {
@@ -7,10 +14,26 @@ header {
     /* Forces elements to the next line if they don't fit */
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 60px;
-    background: #13293d;
-    color: #fff;
+    /* padding: 60px; */
+    background: #95a2ae;
+    color: #070606;
   }
+
+header h1 {
+  margin-left: 60px;
+  align-self: center;
+
+  } 
+
+  header nav ul {
+    list-style-type: none;
+    margin: 25px;
+  }
+
+  header a {
+    color: #99fcb58f;
+    text-decoration: none;
+}
 
   footer {
     display: flex;
@@ -20,6 +43,11 @@ header {
     padding: 10px;
     background: #13293d;
     color: #fff;
+  }
+
+  footer a {
+    text-decoration: none;
+    color: mediumaquamarine;
   }
 
 main {
@@ -42,6 +70,10 @@ main {
   padding-left: 10px;
   width: 100%;
   display: flex;
+}
+
+.container1content img {
+  max-height: 400px;
 }
 
 .container2{
@@ -79,18 +111,25 @@ main {
   border-width: 1px;
   width: 49.7%;
   float: left;
-  justify-content: space-between;
-  /* margin-left: auto;
-  margin-right: auto; */
+  /* justify-content: space-between; */
+  margin-left: 0%;
+  margin-right: 0%;
+  align-content: center;
  }
 
- .cardTop {
-  order: 1;
-  /* flex: 1 0 0; */
-  /* padding: 10px; */
+ .cardTop  {
+  order: 1; 
+  flex: 1 0 0; 
+  padding: 10px;
   text-align: center;
   border-style: solid;
   border-width: 1px;
   width: 100%;
+  /* background-image: url("../images/01-html-css-git-homework-demo.png");  */
+  }
 
- }
+  .cardTop:hover {
+    border-color: red;
+    border-width: 10px;
+    background: yellow;   
+  }
