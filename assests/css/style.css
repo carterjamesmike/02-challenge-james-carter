@@ -1,22 +1,18 @@
 *{
   box-sizing: border-box;
-  /* padding: 0;
-  margin: 0; */
 
 }
 
 body {
-  background-color: bisque;
+  background-color: #c59b17;
 }
 
 header {
     display: flex;
-    /* Forces elements to the next line if they don't fit */
     flex-wrap: wrap;
     justify-content: space-between;
-    /* padding: 60px; */
-    background: #95a2ae;
-    color: #070606;
+    background: #9fb0e8;
+    color: #050505;
   }
 
 header h1 {
@@ -25,29 +21,48 @@ header h1 {
 
   } 
 
-  header nav ul {
+  header nav ul li {
+    /* list-style-type: none;
+    margin: 25px; */
     list-style-type: none;
-    margin: 25px;
+    display: inline-block;
+    margin-left: 25px;
+    align-self: center;
+    padding-top: 15px;
+    margin-right: 20px;
   }
 
+  /* header nav ul {
+    align-self: center
+  } */
+
   header a {
-    color: #99fcb58f;
+    color: #050505;
     text-decoration: none;
 }
 
   footer {
     display: flex;
-    /* Forces elements to the next line if they don't fit */
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 10px;
-    background: #13293d;
-    color: #fff;
+    background: #9fb0e8;
+    color: #050505;
+  }
+
+  footer ul li {
+    list-style-type: none;
+    display: inline-block;
+    margin-left: 25px;
+    align-self: center;
+    padding-top: 15px;
+    margin-right: 20px;
   }
 
   footer a {
-    text-decoration: none;
-    color: mediumaquamarine;
+    text-decoration: underline;
+    color: #050505;
+  
   }
 
 main {
@@ -62,7 +77,7 @@ main {
 }
 
 .container1header {
- border-right: 5px solid red;
+ border-right: 5px solid #225699;
  width: 15%; 
  flex-wrap: wrap;
 }
@@ -84,7 +99,7 @@ main {
 }
 
 .container2header {
-  border-right: 5px solid red; 
+  border-right: 5px solid #225699; 
   width: 15%; 
  }
  
@@ -105,15 +120,12 @@ main {
  }
 
  .card {
-  /* flex: 1 0 0; */
-  /* order: 2; */
-  /* padding: 10px; */
+
   text-align: center;
   border-style: solid;
   border-width: 1px;
   width: 49.7%;
   float: left;
-  /* justify-content: space-between; */
   margin-left: 0%;
   margin-right: 0%;
   align-content: center;
@@ -127,13 +139,12 @@ main {
   border-style: solid;
   border-width: 1px;
   width: 100%;
-  /* background-image: url("../images/01-html-css-git-homework-demo.png");  */
   }
 
   .cardTop:hover {
-    border-color: red;
+    border-color: #225699;
     border-width: 10px;
-    background: yellow;   
+    background: #fdff88;   
   }
 
   /* Cards are split into two columns at 992px or smaller */
