@@ -1,7 +1,7 @@
 *{
   box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+  /* padding: 0;
+  margin: 0; */
 
 }
 
@@ -64,12 +64,14 @@ main {
 .container1header {
  border-right: 5px solid red;
  width: 15%; 
+ flex-wrap: wrap;
 }
 
 .container1content {
   padding-left: 10px;
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .container1content img {
@@ -133,3 +135,31 @@ main {
     border-width: 10px;
     background: yellow;   
   }
+
+  /* Cards are split into two columns at 992px or smaller */
+@media screen and (max-width: 992px) {
+  .container1content .container2content {
+    width: 50%;
+  }
+
+  body {
+    background-color: orange;
+  }
+}
+
+/* Cards are stacked on top of each other at 768px or smaller */
+@media screen and (max-width: 768px) {
+  .container1content .container2content {
+    width: 100%;
+  }
+  body {
+    background-color: aqua;
+  }
+  .container1header {
+    font-size: x-small;
+  }
+
+  .container2header {
+    font-size: x-small;
+  }
+}
