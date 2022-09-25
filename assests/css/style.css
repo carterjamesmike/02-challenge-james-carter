@@ -1,10 +1,9 @@
-*{
+* {
   box-sizing: border-box;
-
 }
 
 body {
-  background-color: #c59b17;
+  background-color: #f4d779;
 }
 
 header {
@@ -18,53 +17,21 @@ header {
 header h1 {
   margin-left: 60px;
   align-self: center;
-
   } 
 
-  header nav ul li {
-    /* list-style-type: none;
-    margin: 25px; */
+header nav ul li {
     list-style-type: none;
     display: inline-block;
     margin-left: 25px;
-    align-self: center;
     padding-top: 15px;
     margin-right: 20px;
   }
 
-  /* header nav ul {
-    align-self: center
-  } */
-
-  header a {
+header a {
     color: #050505;
     text-decoration: none;
 }
 
-  footer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 10px;
-    background: #9fb0e8;
-    color: #050505;
-  }
-
-
-  footer ul li {
-    list-style-type: none;
-    display: inline-block;
-    /* margin-left: 25px; */
-    align-self: center;
-    /* padding-top: 15px; */
-    margin-right: 20px;
-  }
-
-  footer a {
-    text-decoration: underline;
-    color: #050505;
-  
-  }
 
 main {
   display: flex;
@@ -103,25 +70,27 @@ main {
   border-right: 5px solid #225699; 
   width: 15%; 
  }
- 
- .container2content {
-   padding-left: 10px;
-   width: 100%;
-   
- }
 
- .container2header img {
+.container2header img {
   width: 100%;
   opacity: .0001;
  }
 
- .container2header img:hover {
+.container2header img:hover {
   opacity: 1;
   cursor: pointer;
  }
 
- .card {
+.container2content {
+   padding-left: 10px;
+   width: 100%;
+ }
 
+.cardTop img  {
+  width: 60%;
+  }
+
+.card {
   text-align: center;
   border-style: solid;
   border-width: 1px;
@@ -132,32 +101,31 @@ main {
   align-content: center;
  }
 
- .cardTop img  {
-  order: 1; 
-  flex: 1 0 0; 
-  /* padding: 10px; */
-  text-align: center;
-  /* border-style: solid;
-  border-width: 1px; */
-  width: 60%;
-  /* background-image: url("../images/01-html-css-git-homework-demo.png");
-  background-size: cover; */
+.card a {
+  text-decoration: underline;
+  color: #050505;
+}
+
+footer {
+    padding: 10px;
+    background: #9fb0e8;
+    color: #050505;
   }
 
-  /* .cardTop:hover {
-    border-color: #225699;
-    border-width: 10px;
-    background: #fdff88;   
+footer ul li {
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 20px;
   }
- */
+
+footer a {
+    text-decoration: underline;
+    color: #050505; 
+  }
 
 @media screen and (max-width: 992px) {
   .container1content .container2content {
     width: 50%;
-  }
-
-  body {
-    background-color: orange;
   }
 }
 
@@ -165,14 +133,16 @@ main {
   .container1content .container2content {
     width: 100%;
   }
-  body {
-    background-color: aqua;
-  }
-  .container1header {
+.container1header {
     font-size: x-small;
   }
-
-  .container2header {
+.container2header {
     font-size: x-small;
+  }
+.card {
+    float: none;
+  }
+.container1content img {
+  max-height: 200px;
   }
 }
