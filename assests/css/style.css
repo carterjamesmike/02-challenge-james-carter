@@ -1,11 +1,12 @@
+/*Defines box-sizing for whole page*/
 * {
   box-sizing: border-box;
 }
-
+/*Sets background color for whole page*/
 body {
   background-color: #f4d779;
 }
-
+/*Text display and styling for header*/
 header {
     display: flex;
     flex-wrap: wrap;
@@ -13,12 +14,12 @@ header {
     background: #9fb0e8;
     color: #050505;
   }
-
+/*Positioning for "James M. Carter*/
 header h1 {
   margin-left: 60px;
   align-self: center;
   } 
-
+/*Positioning for nav links*/
 header nav ul li {
     list-style-type: none;
     display: inline-block;
@@ -26,70 +27,69 @@ header nav ul li {
     padding-top: 15px;
     margin-right: 20px;
   }
-
+/*Nav link styling*/
 header a {
     color: #050505;
     text-decoration: none;
 }
-
-
+/*Positioning for main page content*/
 main {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
-
+/*Sizing for "About Me" section*/
 .container1 {
   display: flex;
   width: 100%;
 }
-
+/*Sizing and styling for container1 header*/
 .container1header {
  border-right: 5px solid #225699;
  width: 15%; 
  flex-wrap: wrap;
 }
-
+/*Positioning and sizing for container1 content and text wrap*/
 .container1content {
   padding-left: 10px;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
 }
-
+/*Sizing for container1 image*/
 .container1content img {
   max-height: 400px;
 }
-
+/*Sizing for "My work" section*/
 .container2{
   display: flex;
   width: 100%;
 }
-
+/*Sizing and styling for container2 header*/
 .container2header {
   border-right: 5px solid #225699; 
   width: 15%; 
  }
-
+/*Sizing and opacity for container2 header easter egg*/
 .container2header img {
   width: 100%;
   opacity: .0001;
  }
-
+/*Psuedoclass for container2 header easter egg*/
 .container2header img:hover {
   opacity: 1;
   cursor: pointer;
  }
-
+/*Positioning and sizing for container2 content*/
 .container2content {
    padding-left: 10px;
    width: 100%;
  }
-
+/*Sizing for Horiseon image*/
 .cardTop img  {
   width: 60%;
   }
-
+/*Positioning and sizing for additonal work in container2*/
 .card {
   text-align: center;
   border-style: solid;
@@ -100,35 +100,35 @@ main {
   margin-right: 0%;
   align-content: center;
  }
-
+/*Styling for links in container2*/
 .card a {
   text-decoration: underline;
   color: #050505;
 }
-
+/*Styling and positioning for "contact me" footer*/
 footer {
     padding: 10px;
     background: #9fb0e8;
     color: #050505;
   }
-
+/*Positioning for contact me links*/
 footer ul li {
     list-style-type: none;
     display: inline-block;
     margin-right: 20px;
   }
-
+/*Link styling for contact me links*/
 footer a {
     text-decoration: underline;
     color: #050505; 
   }
-
+/*Media query for screen size between 768px-992px*/
 @media screen and (max-width: 992px) {
   .container1content .container2content {
     width: 50%;
   }
 }
-
+/*Media query for screen sizes below 768px*/
 @media screen and (max-width: 768px) {
   .container1content .container2content {
     width: 100%;
